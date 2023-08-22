@@ -1,0 +1,2215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SLC - Homepage</title>
+</head>
+
+<body>
+
+    <!-- TODO add 2 background iamges -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container-sm">
+            <div class="row mt-5">
+                <div class="hero-details col-12 col-lg-7 row-gap-4 d-flex flex-column column-gap-3">
+                    <div class="hero-title">
+                        Learn new skills and get certified
+                    </div>
+                    <div class="hero-text">
+                        Preparing you for success in a changing world
+                    </div>
+                    <div class="search-input d-flex flex-column flex-lg-row align-items-center g-3 row-gap-4 row-gap-lg- column-gap-3">
+                        <div class="">
+                            <label for="search" class="visually-hidden">Search</label>
+                            <input type="text" class="form-control mx-auto mx-sm-0" id="search" placeholder="What are you looking for?">
+                        </div>
+                        <div class="text-center text-sm-start">
+                            <button type="submit" class="search-btn btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-video d-flex position-relative col-12 col-lg-5 align-self-end justify-content-center justify-content-lg-end mt-5 mt-lg-0">
+                    <img class="mx-auto" src="images/video-thumbnail.png" alt="video-thumbnail" width="90%">
+                    <div class="modal fade" id="modal1" aria-hidden="true" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <video controls autoplay id="video1">
+                                    <source src="images/demo-video.mp4" type="video/mp4">
+                                </video>
+                                <img src="images/close.png" id="close-btn-1" class="close-btn" data-bs-dismiss="modal">
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/play.png" id="play-btn-1" data-bs-toggle="modal" href="#modal1" role="button" class="play-btn">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Strip Section --> <!-- TODO Fix icon width (size issues) -->
+    <section class="partners">
+        <div class="container-sm">
+            <div class="row mt-5 py-5 py-lg-4">
+                <p class="partners-title text-center mx-auto">We’re ready to lead you into the future</p>
+                <div class="partner-logos mx-auto mt-3">
+                    <img src="images/aston 1.png" alt="aston">
+                    <img src="images/2-Deloitte_Logo 1.png" alt="deloitte">
+                    <img src="images/belfast 1.png" alt="belfast">
+                    <img src="images/octopus-energy 1.png" alt="octopus">
+                    <img src="images/jaguar 2.png" alt="jaguar">
+                    <img src="images/9-NHS_two 1.png" alt="nhs">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container-sm">
+            <p class="section-title">
+                <span class="title-first">Explore popular courses</span>
+                <span class="title-second">Get job ready now</span>
+            </p>
+            <div class="slider-wrapper d-none d-sm-block">
+                <div id="first-slider" class="splide splide_1">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide category-header d-flex justify-content-center align-items-center">
+                                <div class="category-title tab-a active-a" data-id="tab1">Business Management</div>
+                            </div>
+                            <div class="splide__slide category-header d-flex  align-items-center">
+                                <div class="category-title tab-a" data-id="tab2">Project Management</div>
+                            </div>
+                            <div class="splide__slide category-header d-flex justify-content-center align-items-center">
+                                <div class="category-title tab-a" data-id="tab3">Animal Care</div>
+                            </div>
+                            <div class="splide__slide category-header d-flex justify-content-center align-items-center">
+                                <div class="category-title tab-a" data-id="tab4">Accounting & Finance</div>
+                            </div>
+                            <div class="splide__slide category-header d-flex justify-content-center align-items-center">
+                                <div class="category-title tab-a" data-id="tab5">Health & Childcare</div>
+                            </div>
+                            <div class="splide__slide category-header d-flex justify-content-center align-items-center">
+                                <div class="category-title tab-a" data-id="tab6">Life Learning</div>
+                            </div>
+                            <div class="splide__slide category-header d-flex justify-content-center align-items-center">
+                                <div class="category-title tab-a" data-id="tab7">HR & Leadership</div>
+                            </div>
+                            <div class="splide__slide category-header d-flex justify-content-center align-items-center">
+                                <div class="category-title tab-a" data-id="tab8">Sales & Marketing</div>
+                            </div>
+                            <div class="splide__slide category-header d-flex justify-content-center align-items-center">
+                                <div class="category-title tab-a" data-id="tab9">Office Administration</div>
+                            </div>
+                            <div class="splide__slide category-header d-flex justify-content-center align-items-center">
+                                <div class="category-title tab-a" data-id="tab10">Teaching & Education</div>
+                            </div>
+                            <div class="splide__slide category-header d-flex justify-content-center align-items-center">
+                                <div class="category-title tab-a" data-id="tab11">Employability Skills</div>
+                            </div>
+                            <div class="splide__slide category-header d-flex justify-content-center align-items-center">
+                                <div class="category-title tab-a" data-id="tab12">Other</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__arrows">
+                        <button id="category-prev" class="splide__arrow splide__arrow--prev">
+                            <i class="fa fa-chevron-left"></i>
+                        </button>
+                        <button id="category-next" class="splide__arrow splide__arrow--next">
+                            <i class="fa fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="my-tab-content mt-5">
+                    <div class="tab tab-active" data-id="tab1">
+                        <div class="category-cards my-5">
+                            <div class="category-card">
+                                <p class="ab-name">Pearson BTEC</p>
+                                <p class="ab-description">Pearson BTEC Diploma in Strategic Management and Leadership (RQF)</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.8 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            598 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            125 Learning hours
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" mt-4 mx-auto text-center">
+                                    <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                </div>
+                            </div>
+                            <div class="category-card">
+                                <p class="ab-name">ATHE</p>
+                                <p class="ab-description">ATHE Level 7 Extended Diploma in Strategic Management</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.5 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            246 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            108 Learning hours
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" mt-4 mx-auto text-center">
+                                    <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                </div>
+                            </div>
+                            <div class="category-card">
+                                <p class="ab-name">ATHE</p>
+                                <p class="ab-description">ATHE Level 7 Extended Diploma in Strategic Management</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.2 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            446 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            118 Learning hours
+                                        </div>
+                                    </div>
+                                    <div class=" mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-card">
+                                <p class="ab-name">Pearson BTEC</p>
+                                <p class="ab-description">Pearson BTEC Level 5 Certificate in Management and Leadership</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.6 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            612 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            208 Learning hours
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" mt-4 mx-auto text-center">
+                                    <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                </div>
+                            </div>
+                            <div class="category-card">
+                                <p class="ab-name">Pearson BTEC</p>
+                                <p class="ab-description">Pearson BTEC Diploma in Strategic Management and Leadership (RQF)</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.8 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            598 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            125 Learning hours
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" mt-4 mx-auto text-center">
+                                    <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                </div>
+                            </div>
+                            <div class="category-card">
+                                <p class="ab-name">ATHE</p>
+                                <p class="ab-description">ATHE Level 7 Extended Diploma in Strategic Management</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.5 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            246 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            108 Learning hours
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" mt-4 mx-auto text-center">
+                                    <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                </div>
+                            </div>
+                            <div class="category-card">
+                                <p class="ab-name">ATHE</p>
+                                <p class="ab-description">ATHE Level 7 Extended Diploma in Strategic Management</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.2 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            446 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            118 Learning hours
+                                        </div>
+                                    </div>
+                                    <div class=" mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-card">
+                                <p class="ab-name">Pearson BTEC</p>
+                                <p class="ab-description">Pearson BTEC Level 5 Certificate in Management and Leadership</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.6 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            612 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            208 Learning hours
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" mt-4 mx-auto text-center">
+                                    <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="tab" data-id="tab2">
+                        <div class="category-cards">
+                            <div class="category-card">
+                                <p class="ab-name">Prince2</p>
+                                <p class="ab-description">PRINCE2® Foundation & Practitioner Official Exams Package + Re-sit</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.8 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            598 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            125 Learning hours
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" mt-4 mx-auto text-center">
+                                    <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                </div>
+                            </div>
+                            <div class="category-card">
+                                <p class="ab-name">Prince2</p>
+                                <p class="ab-description">PRINCE2® Foundation & Practitioner Official Exams Package + Re-sit</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.5 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            246 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            108 Learning hours
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" mt-4 mx-auto text-center">
+                                    <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                </div>
+                            </div>
+                            <div class="category-card">
+                                <p class="ab-name">Prince2</p>
+                                <p class="ab-description">PRINCE2® Foundation & Practitioner Official Exams Package + Re-sit</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.2 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            446 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            118 Learning hours
+                                        </div>
+                                    </div>
+                                    <div class=" mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-card">
+                                <p class="ab-name">Prince2</p>
+                                <p class="ab-description">PRINCE2® Foundation & Practitioner Official Exams Package + Re-sit</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.6 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            612 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            208 Learning hours
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" mt-4 mx-auto text-center">
+                                    <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                </div>
+                            </div>
+                            <div class="category-card">
+                                <p class="ab-name">Pearson BTEC</p>
+                                <p class="ab-description">Pearson BTEC Diploma in Strategic Management and Leadership (RQF)</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.8 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            598 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            125 Learning hours
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" mt-4 mx-auto text-center">
+                                    <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                </div>
+                            </div>
+                            <div class="category-card">
+                                <p class="ab-name">Pearson BTEC</p>
+                                <p class="ab-description">Pearson BTEC Diploma in Strategic Management and Leadership (RQF)</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.5 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            246 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            108 Learning hours
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" mt-4 mx-auto text-center">
+                                    <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                </div>
+                            </div>
+                            <div class="category-card">
+                                <p class="ab-name">Pearson BTEC</p>
+                                <p class="ab-description">Pearson BTEC Diploma in Strategic Management and Leadership (RQF)</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.2 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            446 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            118 Learning hours
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-card">
+                                <p class="ab-name">Pearson BTEC</p>
+                                <p class="ab-description">Pearson BTEC Diploma in Strategic Management and Leadership (RQF)</p>
+                                <div class="card-icons flex flex-column row-gap-5">
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/star.png" alt="star">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            4.6 Stars
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/user.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            612 Learners
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-solid.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            12 Lessons
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center column-gap-2">
+                                        <div class="icon-container">
+                                            <img src="images/park-time.png" alt="user">
+                                        </div>
+                                        <div class="align-self-center detail-text">
+                                            208 Learning hours
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4 mx-auto text-center">
+                                    <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="tab" data-id="tab3">
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="tab" data-id="tab4">
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="tab" data-id="tab5">
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="tab" data-id="tab6">
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="tab" data-id="tab7">
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="tab" data-id="tab8">
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="tab" data-id="tab9">
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="tab" data-id="tab10">
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="tab" data-id="tab11">
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="tab" data-id="tab12">
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion d-block d-sm-none" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Business Management
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <div class="category-cards">
+                                <div class="category-card">
+                                    <p class="ab-name">Pearson BTEC</p>
+                                    <p class="ab-description">Pearson BTEC Diploma in Strategic Management and Leadership (RQF)</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.8 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                598 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                125 Learning hours
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                                <div class="category-card">
+                                    <p class="ab-name">ATHE</p>
+                                    <p class="ab-description">ATHE Level 7 Extended Diploma in Strategic Management</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.5 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                246 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                108 Learning hours
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                                <div class="category-card">
+                                    <p class="ab-name">ATHE</p>
+                                    <p class="ab-description">ATHE Level 7 Extended Diploma in Strategic Management</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.2 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                446 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                118 Learning hours
+                                            </div>
+                                        </div>
+                                        <div class=" mt-4 mx-auto text-center">
+                                            <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category-card">
+                                    <p class="ab-name">Pearson BTEC</p>
+                                    <p class="ab-description">Pearson BTEC Level 5 Certificate in Management and Leadership</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.6 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                612 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                208 Learning hours
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                                <div class="category-card">
+                                    <p class="ab-name">Pearson BTEC</p>
+                                    <p class="ab-description">Pearson BTEC Diploma in Strategic Management and Leadership (RQF)</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.8 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                598 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                125 Learning hours
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                                <div class="category-card">
+                                    <p class="ab-name">ATHE</p>
+                                    <p class="ab-description">ATHE Level 7 Extended Diploma in Strategic Management</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.5 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                246 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                108 Learning hours
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                                <div class="category-card">
+                                    <p class="ab-name">ATHE</p>
+                                    <p class="ab-description">ATHE Level 7 Extended Diploma in Strategic Management</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.2 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                446 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                118 Learning hours
+                                            </div>
+                                        </div>
+                                        <div class=" mt-4 mx-auto text-center">
+                                            <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category-card">
+                                    <p class="ab-name">Pearson BTEC</p>
+                                    <p class="ab-description">Pearson BTEC Level 5 Certificate in Management and Leadership</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.6 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                612 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                208 Learning hours
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                                <a class="view-all-btn mobile rounded text-decoration-none mt-5" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Project Management
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="category-cards">
+                                <div class="category-card">
+                                    <p class="ab-name">Prince2</p>
+                                    <p class="ab-description">PRINCE2® Foundation & Practitioner Official Exams Package + Re-sit</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.8 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                598 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                125 Learning hours
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                                <div class="category-card">
+                                    <p class="ab-name">Prince2</p>
+                                    <p class="ab-description">PRINCE2® Foundation & Practitioner Official Exams Package + Re-sit</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.5 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                246 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                108 Learning hours
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                                <div class="category-card">
+                                    <p class="ab-name">Prince2</p>
+                                    <p class="ab-description">PRINCE2® Foundation & Practitioner Official Exams Package + Re-sit</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.2 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                446 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                118 Learning hours
+                                            </div>
+                                        </div>
+                                        <div class=" mt-4 mx-auto text-center">
+                                            <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category-card">
+                                    <p class="ab-name">Prince2</p>
+                                    <p class="ab-description">PRINCE2® Foundation & Practitioner Official Exams Package + Re-sit</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.6 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                612 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                208 Learning hours
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                                <div class="category-card">
+                                    <p class="ab-name">Pearson BTEC</p>
+                                    <p class="ab-description">Pearson BTEC Diploma in Strategic Management and Leadership (RQF)</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.8 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                598 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                125 Learning hours
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                                <div class="category-card">
+                                    <p class="ab-name">Pearson BTEC</p>
+                                    <p class="ab-description">Pearson BTEC Diploma in Strategic Management and Leadership (RQF)</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.5 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                246 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                108 Learning hours
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                                <div class="category-card">
+                                    <p class="ab-name">Pearson BTEC</p>
+                                    <p class="ab-description">Pearson BTEC Diploma in Strategic Management and Leadership (RQF)</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.2 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                446 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                118 Learning hours
+                                            </div>
+                                        </div>
+                                        <div class="mt-4 mx-auto text-center">
+                                            <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category-card">
+                                    <p class="ab-name">Pearson BTEC</p>
+                                    <p class="ab-description">Pearson BTEC Diploma in Strategic Management and Leadership (RQF)</p>
+                                    <div class="card-icons flex flex-column row-gap-5">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/star.png" alt="star">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                4.6 Stars
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/user.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                612 Learners
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-solid.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                12 Lessons
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <div class="icon-container">
+                                                <img src="images/park-time.png" alt="user">
+                                            </div>
+                                            <div class="align-self-center detail-text">
+                                                208 Learning hours
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 mx-auto text-center">
+                                        <a class="view-course-btn btn rounded text-decoration-none" href="#">View Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                                <a class="view-all-btn mobile rounded text-decoration-none mt-5" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Animal Care
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Three
+                        </div>
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn mobile rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                            Accounting & Finance
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Four
+                        </div>
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn mobile rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                            Health & Childcare
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Five
+                        </div>
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn mobile rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                            Life Learning
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Six
+                        </div>
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn mobile rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                            HR & Leadership
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Seven
+                        </div>
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn mobile rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+                            Sales & Marketing
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Eight
+                        </div>
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn mobile rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+                            Office Administration
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Nine
+                        </div>
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn mobile rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+                            Teaching & Education
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Ten
+                        </div>
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn mobile rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false" aria-controls="panelsStayOpen-collapseEleven">
+                            Employability Skills
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Eleven
+                        </div>
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn mobile rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwelve">
+                            Other
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Twelve
+                        </div>
+                        <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                            <a class="view-all-btn mobile rounded text-decoration-none mt-5" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Reviews Section -->
+    <section class="student-reviews">
+        <div class="container-sm">
+            <div class="section-title text-center text-lg-start">
+                What our students say
+            </div>
+            <div class="slider-section col-12 d-flex column-gap-5">
+                <div class="col-lg-2 d-none d-lg-block">
+                    <img class="box-quote-img" src="images/bxs_quote-left.png" alt="">
+                </div>
+                <div class="slider-wrapper col-12 col-lg-10 d-flex align-items-center flex-column flex-lg-row">
+                    <div id="second-slider" class="splide splide_2 col-12 col-lg-9 col-xl-10">
+                        <div class="splide__track ms-auto">
+                            <div class="splide__list">
+                                <div class="splide__slide">
+                                    <div class="splide-container position-relative">
+                                        <div class="review-text text-center text-lg-start">
+                                            The courses were well mapped out and easy to navigate. I was impressed by the customer support team.
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-3 pt-5 justify-content-center justify-content-lg-start text-center text-lg-start mx-auto mx-lg-0">
+                                            <img src="images/review-person-1.jpg" alt="" class="rounded-circle object-fit-cover">
+                                            <div class="review-details">
+                                                <div class="review-name">Kevin Watson</div>
+                                                <div class="review-title">Business Analyst</div>
+                                            </div>
+                                        </div>
+                                        <img class="d-none d-sm-block d-lg-none position-absolute top-0 start-0 m-4" src="images/bxs_quote-left.png" alt="" width="75">
+                                    </div>
+                                </div>
+                                <div class="splide__slide">
+                                    <div class="splide-container position-relative">
+                                        <div class="review-text text-center text-lg-start">
+                                            The curriculum was thoughtfully organized, and I appreciated the prompt assistance from their support team.
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-3 pt-5 justify-content-center justify-content-lg-start text-center text-lg-start mx-auto mx-lg-0">
+                                            <img src="images/review-person-2.jpg" alt="" class="rounded-circle object-fit-cover">
+                                            <div class="review-details">
+                                                <div class="review-name">Sarah Walter</div>
+                                                <div class="review-title">Project Manager</div>
+                                            </div>
+                                        </div>
+                                        <img class="d-none d-sm-block d-lg-none position-absolute top-0 start-0 m-4" src="images/bxs_quote-left.png" alt="" width="75">
+
+                                    </div>
+                                </div>
+                                <div class="splide__slide">
+                                    <div class="splide-container position-relative">
+                                        <div class="review-text text-center text-lg-start">
+                                            Navigating the course content was a breeze, and the customer support exceeded my expectations
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-3 pt-5 justify-content-center justify-content-lg-start text-center text-lg-start mx-auto mx-lg-0">
+                                            <img src="images/review-person-3.jpg" alt="" class="rounded-circle object-fit-cover">
+                                            <div class="review-details">
+                                                <div class="review-name">David Cruz</div>
+                                                <div class="review-title">Business Manager</div>
+                                            </div>
+                                        </div>
+                                        <img class="d-none d-sm-block d-lg-none position-absolute top-0 start-0 m-4" src="images/bxs_quote-left.png" alt="" width="75">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start prev-next-btns col-auto col-lg-3 col-xl-2 ps-lg-4 ps-0 mt-5 mt-lg-0">
+                        <button id="btnPrev" class="d-flex align-items-center"><i class="fa-solid fa-angle-left fs-5"></i></button>
+                        <button id="btnNext" class="d-flex align-items-center"><i class="fa-solid fa-angle-right fs-5"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trustpilot Section -->
+    <section class="trustpilot">
+        <div class="container-sm">
+            <div class="trustpilot-logo d-flex justify-content-center mx-auto col-10 col-lg-6">
+                <img src="images/trustpilot-img.png" alt="truspilot-log">
+            </div>
+        </div>
+    </section>
+
+    <!-- Webinars Section -->
+    <section class="webinars">
+        <div class="container-sm">
+            <div class="section-title">
+                Webinar ipsum dolar sit free webinars
+            </div>
+            <div class="box position-relative upcoming-webinar-main col-12 d-flex flex-column flex-sm-row shadow rounded justify-content-center justify-content-sm-start">
+                <div class="ribbon d-lg-none"><span>UPCOMING</span></div>
+                <div class="webinar-image p-3 mx-auto mx-sm-0">
+                    <img src="images/webinar-image.png" alt="">
+                </div>
+                <div class="webinar-content p-3 text-left d-flex flex-column row-gap-3 row-gap-sm-2 row-gap-md-3 row-gap-lg-2 justify-content-start align-items-center align-items-sm-start">
+                    <div class="webinar-ab-name">Pearson BTEC</div>
+                    <div class="webinar-title mt-1 text-center text-sm-start">Advanced Diploma in Baking and Cake Decorating</div>
+                    <div class="webinar-description d-none d-lg-block">Condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+                    <div class="date text-left d-block d-lg-none">3rd August, 2023</div>
+                    <div class="me-sm-auto text-left mt-1">
+                        <a class="learn-more-btn btn rounded text-decoration-none" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="webinar-date d-none d-lg-block">
+                    <div class="tag">Upcoming</div>
+                    <div class="date text-center p-3 d-none d-sm-block">3rd August, 2023</div>
+                </div>
+            </div>
+            <div class="col-12 d-flex flex-column flex-lg-row column-gap-lg-3 column-gap-5 mt-5 w-100  row-gap-5 row-gap-lg-0">
+                <div class="upcoming-webinar-main d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start shadow rounded w-lg-50 w-100">
+                    <div class="webinar-image p-3 mx-auto mx-sm-0">
+                        <img src="images/webinar-image.png" alt="">
+                    </div>
+                    <div class="webinar-content p-3 text-left d-flex flex-column row-gap-3 row-gap-sm-2 row-gap-md-3 row-gap-lg-3 justify-content-start align-items-center align-items-sm-start">
+                        <div class="webinar-ab-name">Pearson BTEC</div>
+                        <div class="webinar-title mt-1  text-center text-sm-start">Advanced Diploma in Baking and Cake Decorating</div>
+                        <div class="date text-left">3rd August, 2023</div>
+                        <div class="me-sm-auto text-left mt-1">
+                            <a class="learn-more-btn btn rounded text-decoration-none" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="upcoming-webinar-main d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start shadow rounded w-lg-50 w-100">
+                    <div class="webinar-image p-3 mx-auto mx-sm-0">
+                        <img src="images/webinar-image.png" alt="">
+                    </div>
+                    <div class="webinar-content p-3 text-left d-flex flex-column row-gap-3 row-gap-sm-2 row-gap-md-3 row-gap-lg-3 justify-content-start align-items-center align-items-sm-start">
+                        <div class="webinar-ab-name">Pearson BTEC</div>
+                        <div class="webinar-title mt-1  text-center text-sm-start">Advanced Diploma in Baking and Cake Decorating</div>
+                        <div class="date text-left">3rd August, 2023</div>
+                        <div class="me-sm-auto text-left mt-1">
+                            <a class="learn-more-btn btn rounded text-decoration-none" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                <a class="view-more-btn rounded text-decoration-none mt-5" href="#">View More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose SLC Section -->
+    <!-- TODO fix alignment issue of icons on large screens 992px-1200px -->
+    <section class="why-slc">
+        <div class="container-sm">
+            <p class="section-title">
+                Why choose South London College?
+            </p>
+            <div class="bullet-points text-center">
+                <div class="row">
+                    <div class="col-lg col-md-6 col-12 card-icons d-flex flex-column row-gap-3">
+                        <div class="d-flex column-gap-3 items-center justify-content-start">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <img class=" align-self-center" src="images/mdi_user-supervisor.png" alt="">
+                            </div>
+                            <span class="align-self-center why-text">120, 000+ Active learners</span>
+                        </div>
+                        <div class="d-flex column-gap-3 items-center justify-content-start">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <img class="align-self-center" src="images/teenyicons_discount-solid.png" alt="">
+                            </div>
+                            <span class="align-self-center why-text">Exclusive deals and discounts</span>
+                        </div>
+                        <div class="d-flex column-gap-3 items-center justify-content-start">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <img class=" align-self-center" src="images/material-symbols_contact-support.png" alt="">
+                            </div>
+                            <span class="align-self-center why-text">Great learning Support</span>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-6 col-12 card-icons d-flex flex-column row-gap-3 mt-3 mt-md-0">
+                        <div class="d-flex column-gap-3 items-center justify-content-start">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <img class=" align-self-center" src="images/ion_happy.png" alt="">
+                            </div>
+                            <span class="align-self-center why-text">94% Learner Satisfaction</span>
+                        </div>
+                        <div class="d-flex column-gap-3 items-center justify-content-start">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <img class=" align-self-center" src="images/icomoon-free_user-tie.png" alt="">
+                            </div>
+                            <span class="align-self-center why-text">120+ Professional Instructors</span>
+                        </div>
+                        <div class="d-flex column-gap-3 items-center justify-content-start">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <img class=" align-self-center" src="images/ph_wallet-fill.png" alt="">
+                            </div>
+                            <span class="align-self-center why-text">Flexible payment plans</span>
+                        </div>
+                    </div>
+                    <div class="col-lg col-12  card-icons d-flex flex-column row-gap-3 mt-3 mt-lg-0">
+                        <div class="d-flex column-gap-3 items-center justify-content-start">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <img class=" align-self-center" src="images/mdi_book-education.png" alt="">
+                            </div>
+                            <span class="align-self-center why-text">More than 500 Courses</span>
+                        </div>
+                        <div class="d-flex column-gap-3 items-center justify-content-start">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <img class=" align-self-center" src="images/iconamoon_certificate-badge-fill.png" alt="">
+                            </div>
+                            <span class="align-self-center why-text">Recognised Awarding Body partners</span>
+                        </div>
+                        <div class="d-flex column-gap-3 items-center justify-content-start">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <img class=" align-self-center" src="images/ph_wallet-fill.png" alt="">
+                            </div>
+                            <span class="align-self-center why-text">Flexible payment plans</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                <a class="view-all-btn rounded text-decoration-none mt-5" href="#">View All</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Courses Section -->
+    <section class="trending-courses">
+        <div class="container-sm">
+            <p class="section-title">
+                Endorse lorem ipsum dolar
+            </p>
+            <div class="trending-cards">
+                <div class="trending-card d-flex flex-column row-gap-4 p-3 p-sm-4">
+                    <div class="ab-title-rating d-flex justify-content-between">
+                        <div class="title">Pearson BTEC</div>
+                        <div class="rating d-flex align-items-center column-gap-2">
+                            <img class="align-self-center" src="images/tabler_star-filled.png" alt="star-rating">
+                            <span class="align-self-center">4.8 Stars</span>
+                        </div>
+                    </div>
+                    <div class="course-title">
+                        Advanced Diploma in Animal Psychology at QLS Level 3
+                    </div>
+                    <div class="mx-auto text-center mt-1 w-100">
+                        <a class="view-course-btn btn rounded text-decoration-none w-100" href="#">View Course</a>
+                    </div>
+                </div>
+                <div class="trending-card d-flex flex-column row-gap-4 p-3 p-sm-4">
+                    <div class="ab-title-rating d-flex justify-content-between">
+                        <div class="title">Pearson BTEC</div>
+                        <div class="rating d-flex align-items-center column-gap-2">
+                            <img class="align-self-center" src="images/tabler_star-filled.png" alt="star-rating">
+                            <span class="align-self-center">4.8 Stars</span>
+                        </div>
+                    </div>
+                    <div class="course-title">
+                        Pearson BTEC Diploma in Strategic Management and Leadership (RQF)
+                    </div>
+                    <div class="mx-auto text-center mt-1 w-100">
+                        <a class="view-course-btn btn rounded text-decoration-none w-100" href="#">View Course</a>
+                    </div>
+                </div>
+                <div class="trending-card d-flex flex-column row-gap-4 p-3 p-sm-4">
+                    <div class="ab-title-rating d-flex justify-content-between">
+                        <div class="title">Pearson BTEC</div>
+                        <div class="rating d-flex align-items-center column-gap-2">
+                            <img class="align-self-center" src="images/tabler_star-filled.png" alt="star-rating">
+                            <span class="align-self-center">4.8 Stars</span>
+                        </div>
+                    </div>
+                    <div class="course-title">
+                        Diploma in Water Treatment Process Control at QLS Level 3
+                    </div>
+                    <div class="mx-auto text-center mt-1 w-100">
+                        <a class="view-course-btn btn rounded text-decoration-none w-100" href="#">View Course</a>
+                    </div>
+                </div>
+                <div class="trending-card d-flex flex-column row-gap-4 p-3 p-sm-4">
+                    <div class="ab-title-rating d-flex justify-content-between">
+                        <div class="title">Pearson BTEC</div>
+                        <div class="rating d-flex align-items-center column-gap-2">
+                            <img class="align-self-center" src="images/tabler_star-filled.png" alt="star-rating">
+                            <span class="align-self-center">4.8 Stars</span>
+                        </div>
+                    </div>
+                    <div class="course-title">
+                        Diploma in Hydraulic Principles at QLS Level 4
+                    </div>
+                    <div class="mx-auto text-center mt-1 w-100">
+                        <a class="view-course-btn btn rounded text-decoration-none w-100" href="#">View Course</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center mt-5">
+                <a class="browse-all-courses-btn rounded text-decoration-none mt-5" href="#">Browse All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section-->
+    <section class="video">
+        <div class="container-sm">
+            <div class="video-card p-0 d-flex flex-column flex-lg-row col-12 w-100">
+                <div class="col-12 col-lg-6 video-text-container d-flex flex-column order-2 order-lg-1">
+                    <div class="video-text d-flex flex-column justify-content-center justify-content-lg-start mt-5 mt-lg-0 text-center text-lg-start row-gap-4 row-gap-md-4 row-gap-lg-3 row-gap-xl-5">
+                        <span class="text-title">We support for your career journey</span>
+                        <span class="text-description lh-base lh-lg-0">Make South London College your career partner for life and receive access,
+                            support and guidance throughout as you embark on exciting career opportunities and development to meet your professional goals and gain the highest honor.</span>
+                        <div class="col-12 mt-0 mt-lg-2 my-lg-0 text-center text-lg-start mx-auto flex justify-content-center">
+                            <button type="button" class="enquire-button d-flex align-items-center mx-auto mx-lg-0 column-gap-3 btn more-info-btn mb-lg-4">
+                                Enquire Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 video-player position-relative order-1 order-lg-2">
+                    <img width="100%" src="images/career-support-video-thumbnail.png">
+                    <div class="modal fade" id="modal2" aria-hidden="true" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <video controls autoplay id="video2">
+                                    <source src="images/demo-video.mp4" type="video/mp4">
+                                </video>
+                                <img src="images/close.png" id="close-btn-2" class="close-btn" data-bs-dismiss="modal">
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/play.png" id="play-btn-2" data-bs-toggle="modal" href="#modal2" role="button" class="play-btn">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awarding Body Section --> <!-- TODO Fix icon width (size issues) -->
+    <section class="awarding-body">
+        <div class="container-sm">
+            <div class="d-flex align-items-center justify-content-between flex-column flex-lg-row">
+                <div class="section-title">
+                    Get qualified with accredited bodies
+                </div>
+                <div class="text-center mt-4 mt-lg-0">
+                    <a class="view-all-btn rounded text-decoration-none" href="#">View All</a>
+                </div>
+            </div>
+            <div class="awarding-body-text mt-5 text-center text-lg-start lh-base lh-lg-0">
+                If you want to get qualified it’s important to make sure that the course you take is accredited,
+                which means that an awarding body has inspected the course, and has approved the qualification.
+                Awarding bodies are organizations that are strictly regulated, and make sure that the resources and qualifications they approve are of an extremely high standard.
+            </div>
+        </div>
+        <div class="ab-logos mt-5 p-5">
+            <div class="container-sm">
+                <div class="logo-container d-lg-block">
+                    <div class="logo-1 d-flex justify-content-between align-items-center">
+                        <div class="ab-image-container">
+                            <img class="ab-image" src="images/axelos.png" alt="">
+                        </div>
+                        <div class="ab-image-container">
+                            <img class="ab-image" src="images/pearson.png" alt="">
+                        </div>
+                        <div class="ab-image-container">
+                            <img class="ab-image" src="images/ncfe-cache.png" alt="">
+                        </div>
+                        <div class="ab-image-container">
+                            <img class="ab-image" src="images/bcs.png" alt="">
+                        </div>
+                        <div class="ab-image-container">
+                            <img class="ab-image" src="images/athe.png" alt="">
+                        </div>
+                    </div>
+                    <div class="logo-2 d-flex justify-content-between align-items-center mt-lg-5 ">
+                        <div class="ab-image-container">
+                            <img class="ab-image" src="images/cima.png" alt="">
+                        </div>
+                        <div class="ab-image-container">
+                            <img class="ab-image" src="images/tquk.png" alt="">
+                        </div>
+                        <div class="ab-image-container">
+                            <img class="ab-image" src="images/ncfe.png" alt="">
+                        </div>
+                        <div class="ab-image-container">
+                            <img class="ab-image" src="images/qls.png" alt="">
+                        </div>
+                        <div class="ab-image-container">
+                            <img class="ab-image" src="images/cieh.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutor Section --> <!-- TODO Disable tutor card hover transitions on smaller screens -->
+    <section class="tutor">
+        <div class="container-sm">
+            <div class="tutor-text-card p-0 d-flex flex-column flex-lg-row col-12 w-100">
+                <div class="col-12 col-lg-6 d-flex flex-column order-2 order-lg-1">
+                    <div class="tutor-text d-flex flex-column justify-content-center justify-content-lg-start mt-5 mt-lg-0 text-center text-lg-start row-gap-4 row-gap-md-4 row-gap-lg-3 row-gap-xl-5">
+                        <span class="text-title">Lorem ipsum dolar sit amet leaders</span>
+                        <span class="text-description lh-base lh-lg-0">Here’s a great opportunity to join leading instructors at South London College who tutor thousands of students.
+                            Expand your horizons in teaching by becoming a part of this worldwide community of tutors and instructors and showcase your practical skills and
+                            expertise to the learning community.
+                        </span>
+                        <span class="text-description lh-base lh-lg-0">Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.
+                            Suspendisse ac ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna.
+                        </span>
+                        <div class="col-12 mt-0 mt-lg-2 my-lg-0 text-center text-lg-start mx-auto flex justify-content-center">
+                            <button type="button" class="teaching-button d-flex align-items-center mx-auto mx-lg-0 column-gap-3 btn more-info-btn mb-lg-4">
+                                Start Teaching Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <div class="tutor-image-cards">
+                        <div class="tutor-image-card">
+                            <div class="tutor-details d-flex align-items-start flex-column ms-auto pe-4 pt-3">
+                                <div class="tutor-name">Jenna Ortega</div>
+                                <div class="tutor-title">Business Analyst</div>
+                            </div>
+                            <img class="person-image" src="images/person-1.png" alt="">
+                        </div>
+                        <div class="tutor-image-card">
+                            <div class="tutor-details d-flex align-items-start flex-column ps-4 pt-3">
+                                <div class="tutor-name">Draco Malfoy</div>
+                                <div class="tutor-title">Business Manager</div>
+                            </div>
+                            <img class="person-image" src="images/person-2.png" alt="">
+                        </div>
+                        <div class="tutor-image-card">
+                            <div class="tutor-details d-flex align-items-start flex-column pe-4 pt-3 ms-auto ">
+                                <div class="tutor-name">Damon Salvatore</div>
+                                <div class="tutor-title">Project Manager</div>
+                            </div>
+                            <img class="person-image" src="images/person-3.png" alt="">
+                        </div>
+                        <div class="tutor-image-card">
+                            <div class="tutor-details d-flex align-items-start flex-column ps-4 pt-3">
+                                <div class="tutor-name">Elena Gilbert</div>
+                                <div class="tutor-title">Project Coordinator</div>
+                            </div>
+                            <img class="person-image" src="images/person-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student ID Section -->
+    <section class="student-id">
+        <div class="container-sm">
+            <div class="section-title">
+                lorem dolar student ID card
+            </div>
+            <div class="student-id-container">
+                <div class="id-card position-relative">
+                    <img class="id-card-image position-absolute" src="images/id-card-image.png" alt="">
+                </div>
+                <div class="d-flex flex-column row-gap-4 student-id-text">
+                    <div class="text-1">Your Student ID card has never looked more attractive. Enjoy the amazing discounts and giveaways on offer.</div>
+                    <div class="text-2">Study the course of your choice from a wide list of exclusive courses, dine at your favorite restaurant and indulge in mouth-watering dishes,
+                        whether it’s romance, action or drama, the movie theatre warmly welcomes you, discounted gym membership will keep you fit all year around,
+                        and finish off a fabulous day by spending some quiet time at the library.
+                    </div>
+                    <div class="col-12 mt-0 mt-lg-2 my-lg-0 text-center text-lg-start mx-auto flex justify-content-center w-100">
+                        <a href="#" type="button" class="apply-button d-flex align-items-center mx-auto mx-lg-0 column-gap-3 btn more-info-btn mb-lg-4">
+                            Apply Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog">
+        <div class="container-sm">
+            <div class="section-title">
+                Lore ipsum recent blog posts
+            </div>
+            <div class="featured-blog">
+                <div class="featured-blog-image">
+                    <img class="featured-image" src="images/featured-blog-img.png" alt="">
+                </div>
+                <div class="featured-blog-text d-flex flex-column row-gap-4">
+                    <div class="blog-category">Life Learning</div>
+                    <div class="blog-title">Inclusive leadership training is key to career success and equity in science</div>
+                    <div class="blog-text">In the corporate world, businesses compete with each other. With unique strategies and innovative ideas,
+                        firms can stay on top of the game. But, there is one aspect that brings In the corporate world, businesses compete with each other.
+                        With unique strategies and innovative ideas, firms can stay on top of the game. But, there is one aspect that brings...</div>
+                    <!-- TODO Add text color gradient -->
+                    <div class="blog-date">12th January 2023</div>
+                </div>
+            </div>
+            <div class="blog-cards col-12 mt-5">
+                <div class="blog-bg-img d-flex justify-content-start flex-column row-gap-3 position-relative z-3">
+                    <div class="blog-title px-4 pt-4">Inclusive leadership training is key to career success and equity in science</div>
+                    <div class="blog-date cards px-4 pt-4">12th January 2023</div>
+                    <img class="blog-union-image position-absolute" src="images/Union.png" alt="">
+                </div>
+                <div class="blog-bg-img d-flex justify-content-start flex-column row-gap-3 position-relative z-3">
+                    <div class="blog-title px-4 pt-4">8 Reasons Why It's Beneficial to Follow Receptionists Courses</div>
+                    <div class="blog-date cards px-4 pt-4 ">12th January 2023</div>
+                    <img class="blog-union-image position-absolute" src="images/Union.png" alt="">
+                </div>
+                <div class="blog-bg-img d-flex justify-content-start flex-column row-gap-3 position-relative z-3">
+                    <div class="blog-title px-4 pt-4">5 Cool Ideas for Organising an Event Successfully</div>
+                    <div class="blog-date cards px-4 pt-4">12th January 2023</div>
+                    <img class="blog-union-image position-absolute" src="images/Union.png" alt="">
+                </div>
+            </div>
+            <div class="col-auto my-lg-5 my-0 mb-5 mx-auto text-center my-5">
+                <a class="view-all-btn rounded text-decoration-none mt-5" href="#">View All</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
