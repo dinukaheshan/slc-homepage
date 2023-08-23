@@ -1508,10 +1508,6 @@ a {
         align-items: flex-start;
     }
 
-    .awarding-body .ab-image-container {
-        height: 90px !important;
-    }
-
     .awarding-body .logo-1,
     .awarding-body .logo-2 {
         gap: 30px;
