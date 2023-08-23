@@ -362,8 +362,6 @@ section {
 
 .trustpilot .trustpilot-logo img {
     width: 100%;
-    object-fit: cover;
-    object-position: bottom;
 }
 
 /* Webinar Section */
@@ -1495,6 +1493,7 @@ section {
     .awarding-body .logo-2 {
         margin-top: 0 !important;
     }
+
     .awarding-body .ab-image {
         width: 90px !important;
     }
