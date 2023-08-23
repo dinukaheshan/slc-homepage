@@ -1156,13 +1156,36 @@ section {
         text-align: center !important;
     }
 
-    /* Tutor Section */
+    .tutor .tutor-image-card:hover {
+        transform: none;
+    }
+
+    .tutor .tutor-image-card:hover .tutor-details {
+        opacity: 100;
+        transition: none;
+    }
+
+    .tutor .tutor-image-card:nth-child(1):hover .person-image,
+    .tutor .tutor-image-card:nth-child(3):hover .person-image {
+        left: 0;
+        transition: unset !important;
+        transform: unset !important;
+    }
+
+    .tutor .tutor-image-card:nth-child(2):hover .person-image,
+    .tutor .tutor-image-card:nth-child(4):hover .person-image {
+        right: 0;
+        transition: unset !important;
+        transform: unset !important;
+    }
+
+    /* Student ID Card Section */
+
     .student-id .student-id-container {
         grid-template-columns: 1fr;
         margin-top: 60px !important;
     }
 
-    /* Student ID Card Section */
     .student-id .section-title {
         text-align: center;
         margin-bottom: 0 !important;
