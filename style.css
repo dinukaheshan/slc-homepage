@@ -1275,7 +1275,7 @@ a {
     }
 
     .awarding-body .ab-image {
-        width: 15% !important;
+        width: 40% !important;
         aspect-ratio: 3/2 !important;
         object-fit: contain;
     }
