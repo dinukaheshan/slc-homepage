@@ -126,6 +126,11 @@ a {
     align-items: center;
 }
 
+.partner-logos .partner-image {
+    aspect-ratio: 3/2 !important;
+    object-fit: contain;
+}
+
 
 /* Categories Section */
 
@@ -1070,11 +1075,9 @@ a {
         left: 20px !important;
     }
 
-
     .why-slc .bullet-points {
         padding: 60px 20px;
     }
-
 }
 
 
@@ -1091,8 +1094,11 @@ a {
     }
 
     /* Partners Section */
-    .partner-logos {
-        grid-template-columns: repeat(2, 1fr);
+
+    .partner-logos .partner-image {
+        width: 75% !important;
+        aspect-ratio: 3/2;
+        object-fit: contain;
     }
 
     /* Categories Section */
@@ -1261,6 +1267,14 @@ a {
         height: 80px;
     }
 
+    /* Partner Section */
+    .partner-logos {
+        width: 60% !important;
+        aspect-ratio: 3/2 !important;
+        object-fit: contain;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     /* Trending Courses Section */
     .trending-courses .course-title {
         height: 90px;
@@ -1322,6 +1336,12 @@ a {
 
     .partners .partners-title {
         font-size: 16px;
+    }
+
+    .partner-logos {
+        width: 80% !important;
+        aspect-ratio: 3/2 !important;
+        object-fit: contain;
     }
 
     /* Categories Section */
