@@ -323,9 +323,7 @@ a {
     color: #ffffff !important;
 }
 
-.student-reviews .splide-container {
-    height: 300px !important;
-}
+
 
 .student-reviews .review-text {
     font-size: 24px;
@@ -1104,6 +1102,7 @@ a {
         border-radius: 28px;
         padding: 60px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        height: 320px !important;
     }
 
     .student-reviews .review-text {
@@ -1308,6 +1307,10 @@ a {
     .blog .blog-cards {
         grid-template-columns: 1fr;
     }
+
+    .student-reviews .splide-container {
+        height: 350px !important;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1420,6 +1423,10 @@ a {
 
     .student-reviews .review-title {
         font-size: 14px;
+    }
+
+    .student-reviews .splide-container {
+        height: 300px !important;
     }
 
     /* Webinars */
