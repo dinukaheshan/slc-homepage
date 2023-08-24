@@ -1069,6 +1069,12 @@ a {
     .student-id .id-card .id-card-image {
         left: 20px !important;
     }
+
+
+    .why-slc .bullet-points {
+        padding: 60px 20px;
+    }
+
 }
 
 
@@ -1140,7 +1146,8 @@ a {
 
     .awarding-body .ab-image {
         width: 90px !important;
-        height: min-content !important;
+        aspect-ratio: 3/2 !important;
+        object-fit: contain;
     }
 
     .awarding-body .logo-2 {
@@ -1268,8 +1275,9 @@ a {
     }
 
     .awarding-body .ab-image {
-        width: 70px !important;
-        height: min-content !important;
+        width: 15% !important;
+        aspect-ratio: 3/2 !important;
+        object-fit: contain;
     }
 
     /* Blogs Section */
@@ -1518,7 +1526,8 @@ a {
     }
 
     .awarding-body .ab-image {
-        width: 90px !important;
+        aspect-ratio: 3/2 !important;
+        object-fit: contain;
     }
 
     .awarding-body .view-all-btn {
