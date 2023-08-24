@@ -126,12 +126,6 @@ a {
     align-items: center;
 }
 
-.partner-logos .partner-image {
-    aspect-ratio: 3/2 !important;
-    object-fit: contain;
-}
-
-
 /* Categories Section */
 
 .categories .slider-wrapper {
@@ -1093,14 +1087,6 @@ a {
         text-align: center;
     }
 
-    /* Partners Section */
-
-    .partner-logos .partner-image {
-        width: 75% !important;
-        aspect-ratio: 3/2;
-        object-fit: contain;
-    }
-
     /* Categories Section */
     .categories .category-cards {
         display: grid;
@@ -1151,9 +1137,9 @@ a {
     }
 
     .awarding-body .ab-image {
-        width: 90px !important;
+        width: 80% !important;
         aspect-ratio: 3/2 !important;
-        object-fit: contain;
+        object-fit: contain !important;
     }
 
     .awarding-body .logo-2 {
@@ -1269,10 +1255,13 @@ a {
 
     /* Partner Section */
     .partner-logos {
-        width: 60% !important;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .partner-logos .partner-image {
+        width: 50% !important;
         aspect-ratio: 3/2 !important;
         object-fit: contain;
-        grid-template-columns: repeat(2, 1fr);
     }
 
     /* Trending Courses Section */
@@ -1289,7 +1278,6 @@ a {
     }
 
     .awarding-body .ab-image {
-        width: 40% !important;
         aspect-ratio: 3/2 !important;
         object-fit: contain;
     }
@@ -1338,8 +1326,8 @@ a {
         font-size: 16px;
     }
 
-    .partner-logos {
-        width: 80% !important;
+    .partner-logos .partner-image {
+        width: 60% !important;
         aspect-ratio: 3/2 !important;
         object-fit: contain;
     }
@@ -1546,8 +1534,10 @@ a {
     }
 
     .awarding-body .ab-image {
+        width: 50% !important;
+        margin: 0 auto;
         aspect-ratio: 3/2 !important;
-        object-fit: contain;
+        object-fit: contain !important;
     }
 
     .awarding-body .view-all-btn {
