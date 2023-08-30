@@ -1029,6 +1029,32 @@ a {
     width: 90%;
 }
 
+.categories {
+    position: relative;
+}
+
+.categories .my-tab-content {
+    position: relative;
+    z-index: 10;
+}
+
+.categories .tab {
+    position: relative;
+    z-index: 10;
+}
+
+.categories .category-cards {
+    position: relative;
+    z-index: 10;
+}
+
+.categories .categories-union-image {
+    position: absolute;
+    top: 300px;
+    right: 0;
+    z-index: 1;
+}
+
 @media (max-width: 1400px) {
 
     /* Tutor Section */
@@ -1694,5 +1720,4 @@ a {
     .trending-courses .trending-cards {
         padding: 0 30px;
     }
-
 }
