@@ -1029,12 +1029,13 @@ a {
     background-color: #9DD0D8;
     border-radius: 0 0 32px 0;
     height: 200px;
+    z-index: 1;
 }
 
 .blog .blog-bg-img .blog-union-image {
     top: 0;
     right: 0;
-    z-index: -10;
+    z-index: -1;
 }
 
 .blog .blog-date.cards {
