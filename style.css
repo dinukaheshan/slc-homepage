@@ -28,7 +28,7 @@ a {
 /* Hero Section */
 .hero .hero-details {
     position: relative;
-    background-image: url('./images/hero-details-bg.png');
+    background-image: url('https://southlondoncollege.org/wp-content/uploads/2023/08/hero-details-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
